@@ -1,0 +1,65 @@
+main {
+  padding: 30px 20px 30px 20px;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 20px 0 20px 0;
+}
+
+.item-list__img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.1); /*불투명한 블랙*/ /*블랙: rgb(0,0,0) (+알파) 마지막에 불투명도*/
+  border-radius: 12px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list__img img {
+  width: 50px;
+}
+
+.item-list__info {
+  height: 130px;
+  display: flex; /* 전체적으로 flex로 감싸고 */
+  flex-direction: column; /*-> main axis가 '세로'가됨 */
+  justify-content: start; /*세로방향의 시작부분으로 몰기위해서*/
+  align-items: start; /*xy좌표도 start부분으로 위치됨*/
+}
+/* item-list__info안에있는 div의 제목,메타,가격정도 띄우기 */
+.item-list__info div {
+  margin-top: 10px;
+}
+
+.item-list__info-meta {
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item-list__info-price {
+  font-weight: bold;
+}
+
+.write-btn {
+  background-color: var(--button-primary);
+  color: white;
+  padding: 10px 15px 10px 15px; /*글자와 border간격*/
+  font-size: 15px;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 120px;
+  right: 20px; /* 주의 */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* getcssscan.com */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
+}

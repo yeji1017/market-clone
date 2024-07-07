@@ -46,6 +46,7 @@ main {
   font-weight: bold;
 }
 
+/* 색상컬러 변수화 */
 .write-btn {
   background-color: var(--button-primary);
   color: white;
